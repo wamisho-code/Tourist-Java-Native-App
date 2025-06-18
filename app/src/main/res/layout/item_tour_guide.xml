@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/guideCard"
+    android:background="@drawable/rounded"
+    android:backgroundTint="#000"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <!-- ImageView for displaying the image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/guide_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10sp"
+        android:src="@drawable/person_icon"
+        android:backgroundTint="#817F7F"
+        android:tint="#817F7F"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#817F7F"/>
+
+
+    <!-- TextView for displaying the name -->
+    <TextView
+        android:id="@+id/guide_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/guide_profile"
+        android:textStyle="bold"
+        android:text="demoText"
+        android:textColor="#817F7F"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- TextView for displaying the location -->
+    <TextView
+        android:id="@+id/guide_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:inputType="textMultiLine"
+        android:text="Location: "
+        android:layout_below="@+id/guide_name"
+        android:layout_toRightOf="@+id/guide_profile"
+
+        android:textColor="#817F7F"
+        android:ellipsize="end"
+        android:maxLines="1" />
+    <TextView
+        android:id="@+id/guide_language"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Language: "
+        android:layout_marginEnd="5dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/guide_location"
+        android:layout_toRightOf="@+id/guide_profile"
+        android:textColor="#817F7F"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- TextView for displaying the description -->
+    <TextView
+        android:id="@+id/guide_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:padding="7dp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawableTint="#FF9800"
+        android:drawablePadding="5dp"
+        android:layout_toRightOf="@+id/guide_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/guide_language"
+        android:textColor="#817F7F"
+        android:ellipsize="end"
+        android:maxLines="2" />
+    <TextView
+        android:id="@+id/guide_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:paddingRight="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:maxLength="4"
+        android:drawablePadding="5dp"
+        android:drawableTint="#FF9800"
+        android:textStyle="bold"
+        android:text="Rating"
+        android:drawableStart="@drawable/star_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/guide_name"
+        android:textColor="#817F7F"
+        android:ellipsize="end"
+        android:maxLines="2" />
+
+
+</RelativeLayout>

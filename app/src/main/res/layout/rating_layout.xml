@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:elevation="5dp"
+    android:background="@drawable/rounded"
+    android:backgroundTint="#E7E5E5"
+    android:gravity="center"
+             android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/guide_profile_star"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10sp"
+        android:src="@drawable/person_icon"
+        android:backgroundTint="#817F7F"
+        android:tint="#817F7F"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"/>
+
+
+    <!-- TextView for displaying the name -->
+    <TextView
+        android:id="@+id/guide_name_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="25sp"
+        android:inputType="textMultiLine"
+        android:padding="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/guide_profile_star"
+        android:textStyle="bold"
+        android:text="Rate"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_below="@+id/guide_name_star"
+        android:layout_centerHorizontal="true"
+        android:rating="0.0"
+        android:isIndicator="false"
+        android:progressTint="@android:color/holo_orange_light"
+        android:minHeight="48dp"
+        android:minWidth="200dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/ratingBar_star"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dialog_button_holder">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/submitRating"
+       />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_button_holder"
+        android:id="@+id/mail_holder">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_rounded_corner"
+        android:id="@+id/mailSubject"
+        android:maxLength="80"
+        android:gravity="left"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Subject:"
+        android:padding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="left"
+            android:background="@drawable/card_rounded_corner"
+            android:id="@+id/mailBody"
+            android:maxLength="80"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Body"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send mail"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/mail_icon"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:textColor="@color/custom_button_color"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:id="@+id/sendMail"
+            />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/mail_status_txt"
+            android:textColor="@color/black"
+            android:background="#D0F0D2"
+            android:drawableRight="@drawable/tick_icon"
+            android:drawablePadding="3dp"
+            android:text="Mail send successfully"
+            android:layout_marginBottom="20dp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

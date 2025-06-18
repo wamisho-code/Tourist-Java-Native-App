@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/signinimg"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.SigninActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/lobseterregular"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textColor="#FFF"
+        android:id="@+id/natural_historical_sites"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        />
+    <Button
+        android:id="@+id/btngoogle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:elevation="3dp"
+
+        android:background="@drawable/rounded"
+        android:backgroundTint="#FFFF"
+        android:drawableLeft="@drawable/google"
+        android:onClick="login"
+        android:padding="15dp"
+        android:text="Login with Google"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:textColor="#6A6969"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/guideLoadingBar1"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Loading"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/robotobold"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:progressTint="#FFC107"
+            android:indeterminateTint="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFC107"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.PersonalAccountActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="270dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/tourist"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/firstname_text"
+        android:layout_width="300dp"
+        android:layout_height="48sp"
+        android:inputType="textPersonName"
+        android:layout_marginStart="27sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="27sp"
+        android:background="@drawable/rounded"
+        android:hint="First Name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+    <EditText
+        android:id="@+id/lastname_text"
+        android:layout_width="300dp"
+        android:layout_height="48sp"
+        android:inputType="textPersonName"
+        android:layout_marginStart="27sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="27sp"
+        android:background="@drawable/rounded"
+        android:hint="Last Name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <EditText
+        android:id="@+id/country_array"
+        android:layout_width="300dp"
+        android:layout_height="48sp"
+        android:layout_marginStart="27sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="27sp"
+        android:background="@drawable/rounded"
+        android:hint="Country"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <ProgressBar
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        />
+
+
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveAccount"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

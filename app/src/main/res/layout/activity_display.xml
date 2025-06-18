@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.DisplayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6EFDB"
+        android:id="@+id/content"
+
+
+        >
+        <TextView
+            android:id="@+id/contenttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:background="#F6EFDB"
+            android:textColor="#000"
+            android:layout_marginBottom="10sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/contentImage"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="210sp"
+            android:layout_below="@+id/contenttitle"
+            android:src="@mipmap/meskel"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/contentImage"
+            android:background="@color/black"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/contentImage"
+            android:id="@+id/scroll"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/placeDetails"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/latitude"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/longitude"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/region"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/kmfromAA"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@drawable/rounded"
+                        android:padding="10dp"
+                        android:backgroundTint="#E565B4F4"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/link"/>
+
+                </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/description"
+            android:gravity="center|left"
+            android:layout_marginBottom="20sp"
+
+            android:background="#F6EFDB"
+            android:textColor="@color/black"
+            android:padding="15sp"
+            android:textSize="17sp"
+            android:text="The Meskel festival is a significant cultural and religious event in Ethiopia, celebrated by the Ethiopian Orthodox Tewahedo Church. It commemorates the discovery of the True Cross by the Roman Empress Saint Helena in the fourth century.
+                Origin and History
+                The festival's origins trace back to Queen Helena, who, according to legend, had a dream instructing her to make a bonfire. The smoke from this bonfire would guide her to the location of the True Cross, the cross upon which Jesus was crucified. Following this revelation, she ordered the people of Jerusalem to gather wood and make a huge pile. After adding frankincense, the bonfire was lit, and the smoke rose high up to the sky and returned to the ground, exactly to the spot where the Cross had been buried.
+                Celebratio
+                The Meskel festival is celebrated annually on September 27th (or 28th in leap years) in Meskel Square, Addis Ababa. The celebration includes the burning of a large bonfire, known as the Demera, which symbolizes the bonfire Queen Helena made1. The firewood is decorated with daisies, and the bonfire is lit in the early evening. The remains of the fire are collected and used by the faithful to mark their foreheads with the shape of a cross.
+                Significance
+                Meskel is not only a religious event but also a cultural one, bringing together people from different parts of Ethiopia and beyond. It is a time of joy, prayer, and community gathering, with religious and civil leaders presiding over the celebration. The festival has been inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity.
+                Modern Celebrations
+                Today, Meskel continues to be a vibrant and significant festival in Ethiopia, attracting both locals and tourists. The celebration includes traditional music, dance, and a procession of people singing special Meskel songs1. It is a time for families to come together, share meals, and celebrate their faith and heritage.
+
+                "
+            />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:id="@+id/rating_holder"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30sp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/commentHolder"
+
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Comments"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/rounded"
+                            android:backgroundTint="@color/black"
+                            android:padding="8dp"
+                            android:id="@+id/comments"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/commentContainer"
+                            android:visibility="gone"
+                            android:paddingBottom="15dp"
+                            android:layout_below="@+id/comments"
+                            android:layout_height="wrap_content">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                android:id="@+id/comment_recyler"
+                                android:background="@drawable/rounded"
+                                android:backgroundTint="#D9D6D6"
+                                android:layout_marginBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/user_comment_text"
+                                android:layout_width="280dp"
+                                android:layout_height="48sp"
+                                android:inputType="textMultiLine"
+                                android:background="@drawable/rounded"
+                                android:hint="Write Comment..."
+                                android:paddingStart="10dp"
+                                android:layout_below="@+id/comment_recyler"
+                                android:paddingEnd="10dp" />
+                            <Button
+
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Post"
+                                android:layout_toRightOf="@+id/user_comment_text"
+                                android:id="@+id/postComment"
+                                android:textSize="15sp"
+                                android:textAllCaps="false"
+                                android:layout_below="@+id/comment_recyler"
+                                android:background="@drawable/rounded"
+                                android:backgroundTint="@color/black"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

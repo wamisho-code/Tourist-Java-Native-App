@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/imgh"
+        android:backgroundTint="#FFC107"
+        android:gravity="center"
+        android:layout_height="200dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:layout_marginLeft="20dp"
+        android:text="Find Tour Guides"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/robotobold"
+        android:textColor="#000000"
+        android:id="@+id/logo_title"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/toursguide"
+        tools:ignore="MissingConstraints" /></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/guideLoadingBar"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Loading Tour guides"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/robotobold"
+            android:textColor="#646363"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:progressTint="#FFC107"
+            android:indeterminateTint="#FF9800"/>
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:id="@+id/tourist_guide_loader"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/purple_200"/>
+
+</LinearLayout>
+
+

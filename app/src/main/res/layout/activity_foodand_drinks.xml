@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="27sp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.FoodandDrinksActivity">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            ></LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/beyaynet"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="27sp"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="10sp"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/beyanet"
+                    android:src="#9C000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beyaynet"
+                    android:id="@+id/beyanet_txt"
+                    android:layout_gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dorowet"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="27sp"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="15sp"
+                android:background="#592D2D"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/dorowet"
+                    android:src="#9C000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dorowet"
+                    android:id="@+id/doro_txt"
+                    android:layout_gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/firfir"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+
+                android:layout_marginLeft="27sp"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="15sp"
+                android:background="#592D2D"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/firfir"
+                    android:src="#9C000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Firfir"
+                    android:id="@+id/firfir_txt"
+                    android:layout_gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bursame"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="27sp"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="15sp"
+                android:background="#592D2D"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bursame"
+                    android:src="#9C000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bursame"
+                    android:id="@+id/burshame_txt"
+                    android:layout_gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kitfo"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="27sp"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="15sp"
+                android:background="#592D2D"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/kitfo"
+                    android:src="#9C000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kitfo"
+                    android:layout_gravity="center"
+                    android:id="@+id/kitfo_txt"
+                    android:textSize="30sp"
+
+                    android:textColor="@color/white"
+                     />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:id="@+id/shiro"
+                android:layout_marginLeft="27sp"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="15sp"
+                android:background="#592D2D"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/shiro"
+                    android:src="#9C000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shiro_txt"
+                    android:text="Shiro"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+
